@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "versions",
+  "info": { "singularName": "version", "pluralName": "versions", "displayName": "Phiên Bản Xe" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "car": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::car.car",
+      "inversedBy": "versions"
+    },
+    "base_price": { "type": "biginteger" },
+    "image_url": {
+      "type": "string"
+    },
+    "short_desc": { "type": "text" },
+    "display_order": { "type": "integer", "default": 0 },
+    "is_visible": { "type": "boolean", "default": true },
+    "wheelbase": { "type": "integer" },
+    "dimensions": { "type": "string" },
+    "fuel_tank_capacity": { "type": "integer" },
+    "seating_capacity": { "type": "integer" },
+    "ground_clearance": { "type": "integer" },
+    "engine_type": { "type": "string" },
+    "max_power": { "type": "string" },
+    "max_torque": { "type": "string" },
+    "transmission": { "type": "string" },
+    "drivetrain": { "type": "string" },
+    "front_lights": { "type": "text" },
+    "daytime_lights": { "type": "string" },
+    "side_mirrors": { "type": "string" },
+    "wheel_size": { "type": "string" },
+    "rear_trunk": { "type": "string" },
+    "seat_material": { "type": "string" },
+    "screens_system": { "type": "text" },
+    "air_conditioning": { "type": "string" },
+    "sunroof": { "type": "string" },
+    "interior_features": { "type": "text" },
+    "airbags_count": { "type": "integer" },
+    "braking_system": { "type": "string" },
+    "esp_tc": { "type": "string" },
+    "adas_features": { "type": "text" },
+    "parking_camera": { "type": "string" },
+    "color_palette": { "type": "json" },
+    "version_colors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::version-color.version-color",
+      "mappedBy": "version"
+    }
+  }
+}

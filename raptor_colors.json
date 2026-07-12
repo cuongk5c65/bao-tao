@@ -1,0 +1,50 @@
+[
+  {
+    "color_name": "Màu color_454545",
+    "hex_code": "#454545",
+    "is_default": true,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_454545.png"
+  },
+  {
+    "color_name": "Màu color_0c26a6",
+    "hex_code": "#0c26a6",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_0c26a6.png"
+  },
+  {
+    "color_name": "Màu color_ffffff",
+    "hex_code": "#ffffff",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_ffffff.png"
+  },
+  {
+    "color_name": "Màu color_000000",
+    "hex_code": "#000000",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_000000.png"
+  },
+  {
+    "color_name": "Màu color_cd4e18",
+    "hex_code": "#cd4e18",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_cd4e18.webp"
+  },
+  {
+    "color_name": "Màu color_db4c04",
+    "hex_code": "#db4c04",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_db4c04.jpg"
+  },
+  {
+    "color_name": "Màu color_1616ad",
+    "hex_code": "#1616ad",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_1616ad.jpg"
+  },
+  {
+    "color_name": "Màu color_3d3d3d",
+    "hex_code": "#3d3d3d",
+    "is_default": false,
+    "image_url": "/uploads/cars/ranger-raptor/colors/raptor_mau_color_3d3d3d.jpg"
+  }
+]

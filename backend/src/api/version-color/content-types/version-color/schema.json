@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "version_colors",
+  "info": { "singularName": "version-color", "pluralName": "version-colors", "displayName": "Màu Xe" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "color_name": { "type": "string", "required": true },
+    "hex_code": { "type": "string", "required": true },
+    "image_url": {
+      "type": "string"
+    },
+    "display_order": { "type": "integer", "default": 0 },
+    "is_default": { "type": "boolean", "default": false },
+    "version": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::version.version",
+      "inversedBy": "version_colors"
+    }
+  }
+}

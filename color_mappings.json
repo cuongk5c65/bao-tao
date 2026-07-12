@@ -1,0 +1,193 @@
+{
+  "ranger": [
+    {
+      "color_name": "Màu color_d75050",
+      "hex_code": "#d75050",
+      "is_default": true,
+      "image_url": "/uploads/cars/ranger/colors/ranger_mau_color_d75050.png"
+    },
+    {
+      "color_name": "Màu color_464444",
+      "hex_code": "#464444",
+      "is_default": false,
+      "image_url": "/uploads/cars/ranger/colors/ranger_mau_color_464444.png"
+    },
+    {
+      "color_name": "Màu color_ffffff",
+      "hex_code": "#ffffff",
+      "is_default": false,
+      "image_url": "/uploads/cars/ranger/colors/ranger_mau_color_ffffff.png"
+    },
+    {
+      "color_name": "Màu color_4b4949",
+      "hex_code": "#4b4949",
+      "is_default": false,
+      "image_url": "/uploads/cars/ranger/colors/ranger_mau_color_4b4949.png"
+    },
+    {
+      "color_name": "Màu color_000000",
+      "hex_code": "#000000",
+      "is_default": false,
+      "image_url": "/uploads/cars/ranger/colors/ranger_mau_color_000000.jpg"
+    }
+  ],
+  "everest": [
+    {
+      "color_name": "Màu color_545454",
+      "hex_code": "#545454",
+      "is_default": true,
+      "image_url": "/uploads/cars/everest/colors/everest_mau_color_545454.webp"
+    },
+    {
+      "color_name": "Màu color_ffffff",
+      "hex_code": "#ffffff",
+      "is_default": false,
+      "image_url": "/uploads/cars/everest/colors/everest_mau_color_ffffff.webp"
+    },
+    {
+      "color_name": "Màu color_000000",
+      "hex_code": "#000000",
+      "is_default": false,
+      "image_url": "/uploads/cars/everest/colors/everest_mau_color_000000.webp"
+    },
+    {
+      "color_name": "Màu color_364927",
+      "hex_code": "#364927",
+      "is_default": false,
+      "image_url": "/uploads/cars/everest/colors/everest_mau_color_364927.webp"
+    },
+    {
+      "color_name": "Màu color_858585",
+      "hex_code": "#858585",
+      "is_default": false,
+      "image_url": "/uploads/cars/everest/colors/everest_mau_color_858585.webp"
+    }
+  ],
+  "territory": [
+    {
+      "color_name": "Màu color_ffffff",
+      "hex_code": "#ffffff",
+      "is_default": true,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_ffffff.png"
+    },
+    {
+      "color_name": "Màu color_4687b9",
+      "hex_code": "#4687b9",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_4687b9.png"
+    },
+    {
+      "color_name": "Màu color_d73333",
+      "hex_code": "#d73333",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_d73333.png"
+    },
+    {
+      "color_name": "Màu color_bdbdbd",
+      "hex_code": "#bdbdbd",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_bdbdbd.png"
+    },
+    {
+      "color_name": "Màu color_000000",
+      "hex_code": "#000000",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_000000.png"
+    },
+    {
+      "color_name": "Màu color_df3a3a",
+      "hex_code": "#df3a3a",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_df3a3a.png"
+    },
+    {
+      "color_name": "Màu color_a1a1a1",
+      "hex_code": "#a1a1a1",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_a1a1a1.png"
+    },
+    {
+      "color_name": "Màu color_4586cd",
+      "hex_code": "#4586cd",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_4586cd.png"
+    },
+    {
+      "color_name": "Màu color_57a8bc",
+      "hex_code": "#57a8bc",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_57a8bc.png"
+    },
+    {
+      "color_name": "Màu color_d9d9d9",
+      "hex_code": "#d9d9d9",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_d9d9d9.png"
+    },
+    {
+      "color_name": "Màu color_c20000",
+      "hex_code": "#c20000",
+      "is_default": false,
+      "image_url": "/uploads/cars/territory/colors/territory_mau_color_c20000.png"
+    }
+  ],
+  "transit": [
+    {
+      "color_name": "Màu color_4c4344",
+      "hex_code": "#4c4344",
+      "is_default": true,
+      "image_url": "/uploads/cars/transit/colors/transit_mau_color_4c4344.png"
+    },
+    {
+      "color_name": "Màu color_b3b3b7",
+      "hex_code": "#b3b3b7",
+      "is_default": false,
+      "image_url": "/uploads/cars/transit/colors/transit_mau_color_b3b3b7.png"
+    },
+    {
+      "color_name": "Màu color_000000",
+      "hex_code": "#000000",
+      "is_default": false,
+      "image_url": "/uploads/cars/transit/colors/transit_mau_color_000000.png"
+    },
+    {
+      "color_name": "Màu color_ffffff",
+      "hex_code": "#ffffff",
+      "is_default": false,
+      "image_url": "/uploads/cars/transit/colors/transit_mau_color_ffffff.png"
+    },
+    {
+      "color_name": "Màu color_d2d2d2",
+      "hex_code": "#d2d2d2",
+      "is_default": false,
+      "image_url": "/uploads/cars/transit/colors/transit_mau_color_d2d2d2.png"
+    }
+  ],
+  "ranger-raptor": [],
+  "mustang-mach-e": [
+    {
+      "color_name": "Màu color_9a2d2d",
+      "hex_code": "#9a2d2d",
+      "is_default": true,
+      "image_url": "/uploads/cars/mustang-mach-e/colors/mustang-mach-e_mau_color_9a2d2d.png"
+    },
+    {
+      "color_name": "Màu color_075430",
+      "hex_code": "#075430",
+      "is_default": false,
+      "image_url": "/uploads/cars/mustang-mach-e/colors/mustang-mach-e_mau_color_075430.png"
+    },
+    {
+      "color_name": "Màu color_ffffff",
+      "hex_code": "#ffffff",
+      "is_default": false,
+      "image_url": "/uploads/cars/mustang-mach-e/colors/mustang-mach-e_mau_color_ffffff.png"
+    },
+    {
+      "color_name": "Màu color_000000",
+      "hex_code": "#000000",
+      "is_default": false,
+      "image_url": "/uploads/cars/mustang-mach-e/colors/mustang-mach-e_mau_color_000000.png"
+    }
+  ]
+}

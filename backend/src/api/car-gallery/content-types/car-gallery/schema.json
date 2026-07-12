@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "car_galleries",
+  "info": { "singularName": "car-gallery", "pluralName": "car-galleries", "displayName": "Thư Viện Ảnh Xe" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "caption": { "type": "string" },
+    "image_type": {
+      "type": "enumeration",
+      "enum": ["hero", "exterior", "interior", "detail"],
+      "default": "exterior"
+    },
+    "display_order": { "type": "integer", "default": 0 },
+    "car": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::car.car",
+      "inversedBy": "galleries"
+    }
+  }
+}

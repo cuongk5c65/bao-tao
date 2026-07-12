@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": { "singularName": "lead", "pluralName": "leads", "displayName": "Khách Liên Hệ" },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "customer_name": { "type": "string", "required": true },
+    "phone": { "type": "string", "required": true },
+    "car_interested": { "type": "string" },
+    "version_interested": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::version.version"
+    },
+    "province": { "type": "string" },
+    "status": { "type": "enumeration", "enum": ["Mới", "Đang tư vấn", "Chốt cọc", "Hủy"], "default": "Mới" },
+    "notes": { "type": "text" }
+  }
+}

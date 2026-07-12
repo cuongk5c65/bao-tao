@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": { "singularName": "car", "pluralName": "cars", "displayName": "Dòng Xe" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "name", "required": true },
+    "category": {
+      "type": "enumeration",
+      "enum": ["suv", "pickup", "commercial", "ev"],
+      "required": true,
+      "default": "suv"
+    },
+    "description": { "type": "text" },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "brochure_url": { "type": "string" },
+    "display_order": { "type": "integer", "default": 0 },
+    "is_visible": { "type": "boolean", "default": true },
+    "price_from": { "type": "biginteger" },
+    "versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::version.version",
+      "mappedBy": "car"
+    },
+    "galleries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car-gallery.car-gallery",
+      "mappedBy": "car"
+    }
+  }
+}

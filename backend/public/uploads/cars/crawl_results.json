@@ -1,0 +1,580 @@
+{
+  "territory": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/thumbnail.png",
+    "colors": [
+      {
+        "name": "Ford Territory Mới 2025 | Titanium",
+        "slug": "ford_territory_moi_2025_titanium",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_titanium.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-trend-5181756976972.png"
+      },
+      {
+        "name": "Ford Territory Mới 2025 | Titanium X",
+        "slug": "ford_territory_moi_2025_titanium_x",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_titanium_x.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-titanium-1051756979285.png"
+      },
+      {
+        "name": "Ford Territory Mới 2025 | Trend",
+        "slug": "ford_territory_moi_2025_trend",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_trend.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-trend1755942938_1301708969324972242.jpg"
+      },
+      {
+        "name": "Ford Territory Mới 2025 | Trend",
+        "slug": "ford_territory_moi_2025_trend_1",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_trend_1.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-trend1755942939_1694075721285677461.jpg"
+      },
+      {
+        "name": "Ford Territory Mới 2025 | Trend",
+        "slug": "ford_territory_moi_2025_trend_2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_trend_2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-trend1755942941_1509062105852273768.jpg"
+      },
+      {
+        "name": "Ford Territory Mới 2025 | Trend",
+        "slug": "ford_territory_moi_2025_trend_3",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/colors/ford_territory_moi_2025_trend_3.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-territory-moi-2025-trend-9911755941916.png"
+      }
+    ],
+    "gallery": [
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_1_FordTerritoryMoi2025jpg.jpg",
+        "source": "https://danaford.com.vn/public/upload/banner/Territory/FordTerritoryMoi2025jpg.jpg",
+        "name": "exterior_1_FordTerritoryMoi2025jpg.jpg"
+      },
+      {
+        "type": "interior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/interior_1_noi-that-territory-new-titanium1.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new-titanium-mau-xe/noi-that-territory-new-titanium1.jpg",
+        "name": "interior_1_noi-that-territory-new-titanium1.jpg"
+      },
+      {
+        "type": "interior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/interior_2_noi-that-territory-new-titanium2.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new-titanium-mau-xe/noi-that-territory-new-titanium2.jpg",
+        "name": "interior_2_noi-that-territory-new-titanium2.jpg"
+      },
+      {
+        "type": "interior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/interior_3_noi-that-territory-new-titanium3.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new-titanium-mau-xe/noi-that-territory-new-titanium3.jpg",
+        "name": "interior_3_noi-that-territory-new-titanium3.jpg"
+      },
+      {
+        "type": "interior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/interior_4_noi-that-territory-new-titanium4.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new-titanium-mau-xe/noi-that-territory-new-titanium4.jpg",
+        "name": "interior_4_noi-that-territory-new-titanium4.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_2_02-ngoai-that-ford-territory-new.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new/02-ngoai-that-ford-territory-new.jpg",
+        "name": "exterior_2_02-ngoai-that-ford-territory-new.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_3_04-ngoai-that-ford-territory-new.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new/04-ngoai-that-ford-territory-new.jpg",
+        "name": "exterior_3_04-ngoai-that-ford-territory-new.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_4_Ford-Territory-new-xanh-1.png",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Territory/territory-new/Ford-Territory-new-xanh-1.png",
+        "name": "exterior_4_Ford-Territory-new-xanh-1.png"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_5_Ford-Territory-new-titanium-do-1.png",
+        "source": "public/upload/sanpham/360/Territory360/Territorynewtitanium/Ford-Territory-new-titanium-do-1.png",
+        "name": "exterior_5_Ford-Territory-new-titanium-do-1.png"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/territory/gallery/exterior_6_Ford-territory-new-titanium-plus-trang1.png",
+        "source": "public/upload/sanpham/360/Territory360/Territorynewtitanplus/Ford-territory-new-titanium-plus-trang1.png",
+        "name": "exterior_6_Ford-territory-new-titanium-plus-trang1.png"
+      }
+    ]
+  },
+  "everest": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/thumbnail.png",
+    "colors": [
+      {
+        "name": "Ford Everest Active Mới",
+        "slug": "ford_everest_active_moi",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/colors/ford_everest_active_moi.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-active-moi-1801779424968.png"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum 2.0L 10AT 4x2",
+        "slug": "ford_everest_moi_platinum_2_0l_10at_4x2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/colors/ford_everest_moi_platinum_2_0l_10at_4x2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-0l-10at-4x2-4921778579692.jpg"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum 2.0L 10AT 4x4",
+        "slug": "ford_everest_moi_platinum_2_0l_10at_4x4",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/colors/ford_everest_moi_platinum_2_0l_10at_4x4.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-0l-10at-4x4-3131778580169.jpg"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum+ 2.3L",
+        "slug": "ford_everest_moi_platinum_2_3l",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/colors/ford_everest_moi_platinum_2_3l.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-3l-6471778640354.png"
+      },
+      {
+        "name": "Ford Everest Sport Mới",
+        "slug": "ford_everest_sport_moi",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/colors/ford_everest_sport_moi.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-sport-moi-5821779424877.png"
+      }
+    ],
+    "gallery": [
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_1_20-inch-alloy-wheels-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/20-inch-alloy-wheels-new.webp",
+        "name": "exterior_1_20-inch-alloy-wheels-new.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_2_b-and-o-speaker-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/b-and-o-speaker-new.webp",
+        "name": "exterior_2_b-and-o-speaker-new.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_3_c-clamp-headlamp-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/c-clamp-headlamp-new.webp",
+        "name": "exterior_3_c-clamp-headlamp-new.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_4_fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg",
+        "name": "exterior_4_fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg"
+      },
+      {
+        "type": "interior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/interior_1_luxury-interior-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/luxury-interior-new.webp",
+        "name": "interior_1_luxury-interior-new.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_5_modern-control-panel-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/modern-control-panel-new.webp",
+        "name": "exterior_5_modern-control-panel-new.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_6_zone-lighting-new.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/zone-lighting-new.webp",
+        "name": "exterior_6_zone-lighting-new.webp"
+      },
+      {
+        "type": "feature",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/feature_1_vn-feature-card-1.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinumplus/vn-feature-card-1.webp",
+        "name": "feature_1_vn-feature-card-1.webp"
+      },
+      {
+        "type": "feature",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/feature_2_vn-feature-card-2.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinumplus/vn-feature-card-2.webp",
+        "name": "feature_2_vn-feature-card-2.webp"
+      },
+      {
+        "type": "feature",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/feature_3_vn-feature-card-4.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinumplus/vn-feature-card-4.webp",
+        "name": "feature_3_vn-feature-card-4.webp"
+      },
+      {
+        "type": "feature",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/feature_4_vn-feature-card-5.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinumplus/vn-feature-card-5.webp",
+        "name": "feature_4_vn-feature-card-5.webp"
+      },
+      {
+        "type": "feature",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/feature_5_vn-feature-card-6.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinumplus/vn-feature-card-6.webp",
+        "name": "feature_5_vn-feature-card-6.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/everest/gallery/exterior_7_black1.webp",
+        "source": "public/upload/sanpham/360/Everest360/Platinum/black1.webp",
+        "name": "exterior_7_black1.webp"
+      }
+    ]
+  },
+  "ranger": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/thumbnail.png",
+    "colors": [
+      {
+        "name": "Ford Everest Active Mới",
+        "slug": "ford_everest_active_moi",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_everest_active_moi.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-active-moi-1801779424968.png"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum 2.0L 10AT 4x2",
+        "slug": "ford_everest_moi_platinum_2_0l_10at_4x2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_everest_moi_platinum_2_0l_10at_4x2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-0l-10at-4x2-4921778579692.jpg"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum 2.0L 10AT 4x4",
+        "slug": "ford_everest_moi_platinum_2_0l_10at_4x4",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_everest_moi_platinum_2_0l_10at_4x4.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-0l-10at-4x4-3131778580169.jpg"
+      },
+      {
+        "name": "Ford Everest Mới | Platinum+ 2.3L",
+        "slug": "ford_everest_moi_platinum_2_3l",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_everest_moi_platinum_2_3l.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-moi-platinum-2-3l-6471778640354.png"
+      },
+      {
+        "name": "Ford Everest Sport Mới",
+        "slug": "ford_everest_sport_moi",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_everest_sport_moi.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-everest-sport-moi-5821779424877.png"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-3-0-2231778574000.png"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_1",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_1.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573879_6391472221502764464.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573898_1049903837392484352.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_3",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_3.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573903_11891728751969741071.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_4",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_4.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573908_4058621621768953663.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_5",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_5.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573919_742571805833590719.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_6",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_6.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573927_12487988961823379604.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_7",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_7.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573934_1195975442139633639.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_8",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_8.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573939_481746963472210207.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_9",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_9.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573943_2760844881099700229.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_10",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_10.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573947_222985667469936038.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_11",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_11.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573973_13177321491004262614.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_12",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_12.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573951_13854078361857239851.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_13",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_13.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573887_1147907153128085798.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_14",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_14.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573956_15349444731705980911.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_15",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_15.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778573963_2908104721483097207.jpg"
+      },
+      {
+        "name": "Ford Ranger Mới 2026 | Wildtrak 3.0",
+        "slug": "ford_ranger_moi_2026_wildtrak_3_0_16",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_moi_2026_wildtrak_3_0_16.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-wildtrak-moi-301778574100_131691914252808109.jpg"
+      },
+      {
+        "name": "Ford Ranger | Stormtrak 4x4 AT",
+        "slug": "ford_ranger_stormtrak_4x4_at",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_stormtrak_4x4_at.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-the-he-moi-stormtrak-4321729530652.png"
+      },
+      {
+        "name": "Ford Ranger | Stormtrak 4x4 AT",
+        "slug": "ford_ranger_stormtrak_4x4_at_1",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_stormtrak_4x4_at_1.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-stormtrak1723692637_6823855292146088568.jpg"
+      },
+      {
+        "name": "Ford Ranger | Stormtrak 4x4 AT",
+        "slug": "ford_ranger_stormtrak_4x4_at_2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_stormtrak_4x4_at_2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-stormtrak1723692638_1563653847673835431.jpg"
+      },
+      {
+        "name": "Ford Ranger | Stormtrak 4x4 AT",
+        "slug": "ford_ranger_stormtrak_4x4_at_3",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_stormtrak_4x4_at_3.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-stormtrak1723692638_2563055311665782963.jpg"
+      },
+      {
+        "name": "Ford Ranger | XLS 4x2 AT",
+        "slug": "ford_ranger_xls_4x2_at",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_xls_4x2_at.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-the-he-moi-xls-4x2-at-631728449877.png"
+      },
+      {
+        "name": "Ford Ranger | XLS 4x4 AT",
+        "slug": "ford_ranger_xls_4x4_at",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_xls_4x4_at.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-the-he-moi-xls-4x4-at-3761728625354.png"
+      },
+      {
+        "name": "Ford Ranger | XLS+ 4x2",
+        "slug": "ford_ranger_xls_4x2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_xls_4x2.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-the-he-moi-xls-9751738893391.png"
+      },
+      {
+        "name": "Ford Ranger | XLS+ 4x4",
+        "slug": "ford_ranger_xls_4x4",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/colors/ford_ranger_xls_4x4.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-ranger-the-he-moi-xls-4x4-9951738895543.png"
+      }
+    ],
+    "gallery": [
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_1_fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Everest/Platinum2026/fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg",
+        "name": "exterior_1_fODR-RANGE-NEN0004ranger-xlt-22l-4x4-at-15121624066378-1.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_2_WildtrakVangKoNen.png",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/wildtrak/WildtrakVangKoNen.png",
+        "name": "exterior_2_WildtrakVangKoNen.png"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_3_stormtrak-col-1.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-1.webp",
+        "name": "exterior_3_stormtrak-col-1.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_4_stormtrak-col-2.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-2.webp",
+        "name": "exterior_4_stormtrak-col-2.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_5_stormtrak-col-3.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-3.webp",
+        "name": "exterior_5_stormtrak-col-3.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_6_stormtrak-col-4.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-4.webp",
+        "name": "exterior_6_stormtrak-col-4.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_7_stormtrak-col-5.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-5.webp",
+        "name": "exterior_7_stormtrak-col-5.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_8_stormtrak-col-6.webp",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ranger/xls/stormtrak-col-6.webp",
+        "name": "exterior_8_stormtrak-col-6.webp"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger/gallery/exterior_9_stormtrak-1.webp",
+        "source": "public/upload/sanpham/360/Ranger360/stormtrak1/stormtrak-1.webp",
+        "name": "exterior_9_stormtrak-1.webp"
+      }
+    ]
+  },
+  "ranger-raptor": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/ranger-raptor/thumbnail.png",
+    "colors": [],
+    "gallery": []
+  },
+  "transit": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/thumbnail.png",
+    "colors": [
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 10 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_10_cho",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_10_cho.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-the-he-moi-limousine-10-cho-9081730271881.png"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 10 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_10_cho_1",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_10_cho_1.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-premium1723626865_649128305444163745.jpg"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 10 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_10_cho_2",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_10_cho_2.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-premium1723626868_20464921872076255655.jpg"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 10 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_10_cho_3",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_10_cho_3.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-premium1723626871_13608725791937259835.jpg"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 10 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_10_cho_4",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_10_cho_4.jpg",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-premium1723626871_1177490644624299228.jpg"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Limousine 12 chỗ",
+        "slug": "ford_transit_the_he_moi_limousine_12_cho",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_limousine_12_cho.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-the-he-moi-limousine-12-cho-9841730271894.png"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Premium 16 Chỗ",
+        "slug": "ford_transit_the_he_moi_premium_16_cho",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_premium_16_cho.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-the-he-moi-premium-16-cho-8261730271854.png"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Premium 18 Chỗ",
+        "slug": "ford_transit_the_he_moi_premium_18_cho",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_premium_18_cho.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-the-he-moi-premium-18-cho-2511730271867.png"
+      },
+      {
+        "name": "Ford Transit Thế Hệ Mới | Trend 16 Chỗ",
+        "slug": "ford_transit_the_he_moi_trend_16_cho",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/transit/colors/ford_transit_the_he_moi_trend_16_cho.png",
+        "source": "https://danaford.com.vn/public/upload/images/hinh_sanpham/ford-transit-the-he-moi-trend-16-cho-971730271817.png"
+      }
+    ],
+    "gallery": []
+  },
+  "mustang-mach-e": {
+    "thumbnail": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/thumbnail.png",
+    "colors": [],
+    "gallery": [
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_1_Ford-Mustang-Mach-E-Cover.png",
+        "source": "https://danaford.com.vn/public/upload/banner/Ford-Mustang-Mach-E-Cover.png",
+        "name": "Ford-Mustang-Mach-E-Cover.png"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_2_Ford-mustang-mach-e-all-1.png",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Ford-mustang-mach-e-all-1.png",
+        "name": "Ford-mustang-mach-e-all-1.png"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_3_KVVN24FRDMCH48104Lowres.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Mustang/KVVN24FRDMCH48104Lowres.jpg",
+        "name": "KVVN24FRDMCH48104Lowres.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_4_VN21FRDMCHLIPMAN82564HiresRGBEdit.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Mustang/VN21FRDMCHLIPMAN82564HiresRGBEdit.jpg",
+        "name": "VN21FRDMCHLIPMAN82564HiresRGBEdit.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_5_VN21FRDMCHLIPMAN83075HiresRGBEdit.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Mustang/VN21FRDMCHLIPMAN83075HiresRGBEdit.jpg",
+        "name": "VN21FRDMCHLIPMAN83075HiresRGBEdit.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_6_VN21FRDMCHLIPMAN86148Lowres.jpg",
+        "source": "https://danaford.com.vn/public/upload/sanpham/Mustang/VN21FRDMCHLIPMAN86148Lowres.jpg",
+        "name": "VN21FRDMCHLIPMAN86148Lowres.jpg"
+      },
+      {
+        "type": "exterior",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/exterior_7_Mustang-Match-E-01.png",
+        "source": "public/upload/sanpham/360/Mustang/Mustang-Match-E-01.png",
+        "name": "Mustang-Match-E-01.png"
+      },
+      {
+        "type": "360",
+        "file": "/Users/cuongqnm/Desktop/App Khách/Bảo Táo/backend/public/uploads/cars/mustang-mach-e/gallery/360_Mustang-Match-E-01.png",
+        "source": "public/upload/sanpham/360/Mustang/Mustang-Match-E-01.png",
+        "name": "Mustang-Match-E-01.png"
+      }
+    ]
+  }
+}

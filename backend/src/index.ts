@@ -109,12 +109,12 @@ export default {
           description: 'SUV đô thị cao cấp với thiết kế hiện đại, trang bị công nghệ thông minh và tiện nghi vượt trội trong phân khúc.',
           display_order: 1,
           is_visible: true,
-          price_from: '799000000',
+          price_from: '739000000',
           versions: [
             {
               name: 'Ford Territory Thế Hệ Mới — Trend 1.5L AT',
               image_url: '/uploads/cars/territory/versions/ford_territory_moi_2025_trend_3.png',
-              base_price: '799000000',
+              base_price: '739000000',
               short_desc: 'Phiên bản tiêu chuẩn với đầy đủ trang bị an toàn và tiện nghi cơ bản.',
               display_order: 1,
               is_visible: true,
@@ -138,7 +138,7 @@ export default {
             {
               name: 'Ford Territory Thế Hệ Mới — Titanium 1.5L AT',
               image_url: '/uploads/cars/territory/versions/ford_territory_moi_2025_titanium.png',
-              base_price: '879000000',
+              base_price: '819000000',
               short_desc: 'Phiên bản nâng cao với cửa sổ trời, màn hình lớn và nhiều tính năng ADAS.',
               display_order: 2,
               is_visible: true,
@@ -164,7 +164,7 @@ export default {
             {
               name: 'Ford Territory Thế Hệ Mới — Titanium X 1.5L AT',
               image_url: '/uploads/cars/territory/versions/ford_territory_moi_2025_titanium_x.png',
-              base_price: '929000000',
+              base_price: '875000000',
               short_desc: 'Phiên bản cao cấp nhất với nội thất da, ADAS đầy đủ và tiện nghi hàng đầu.',
               display_order: 3,
               is_visible: true,
@@ -205,12 +205,12 @@ export default {
           description: 'SUV 7 chỗ cao cấp với khung gầm body-on-frame, khả năng vận hành mạnh mẽ cả on-road và off-road.',
           display_order: 2,
           is_visible: true,
-          price_from: '1099000000',
+          price_from: '1129000000',
           versions: [
             {
               name: 'Ford Everest Thế Hệ Mới — Active 2.0L AT 4x2',
               image_url: '/uploads/cars/everest/versions/ford_everest_active_moi.png',
-              base_price: '1099000000',
+              base_price: '1129000000',
               short_desc: 'Phiên bản khởi điểm với đầy đủ trang bị cốt lõi cho gia đình.',
               display_order: 1,
               is_visible: true,
@@ -234,7 +234,7 @@ export default {
             {
               name: 'Ford Everest Thế Hệ Mới — Sport 2.0L AT 4x2',
               image_url: '/uploads/cars/everest/versions/ford_everest_sport_moi.png',
-              base_price: '1199000000',
+              base_price: '1209000000',
               short_desc: 'Phiên bản thể thao với ngoại thất mạnh mẽ và trang bị nâng cấp.',
               display_order: 2,
               is_visible: true,
@@ -285,7 +285,7 @@ export default {
             {
               name: 'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x4',
               image_url: '/uploads/cars/everest/colors/ford_everest_moi_platinum_2_0l_10at_4x4.jpg',
-              base_price: '1499000000',
+              base_price: '1440000000',
               short_desc: 'Phiên bản Platinum dẫn động 4 bánh, chinh phục mọi địa hình.',
               display_order: 4,
               is_visible: true,
@@ -353,12 +353,12 @@ export default {
           description: 'Bán tải hàng đầu Việt Nam với thiết kế cứng cáp, công nghệ hiện đại và khả năng vận hành vượt trội.',
           display_order: 3,
           is_visible: true,
-          price_from: '659000000',
+          price_from: '707000000',
           versions: [
             {
               name: 'Ford Ranger Thế Hệ Mới — XLS 4x2 AT',
               image_url: '/uploads/cars/ranger/versions/ford_ranger_xls_4x2.png',
-              base_price: '659000000',
+              base_price: '707000000',
               short_desc: 'Phiên bản tiêu chuẩn dành cho công việc và gia đình.',
               display_order: 1,
               is_visible: true,
@@ -523,7 +523,7 @@ export default {
           description: 'Bán tải hiệu suất cao hàng đầu, được thiết kế để chinh phục mọi địa hình khắc nghiệt nhất.',
           display_order: 4,
           is_visible: true,
-          price_from: '1299000000',
+          price_from: '1448000000',
           versions: [
             {
               name: 'Ford Ranger Raptor Thế Hệ Mới — 2.0L Bi-Turbo 4WD',
@@ -554,7 +554,7 @@ export default {
             {
               name: 'Ford Ranger Raptor Thế Hệ Mới — 3.0L V6 Twin-Turbo',
               image_url: null,
-              base_price: '1529000000',
+              base_price: '1448000000',
               short_desc: 'Quái thú V6 Twin-Turbo 397 mã lực, đỉnh cao bán tải hiệu suất.',
               display_order: 2,
               is_visible: true,
@@ -594,12 +594,12 @@ export default {
           description: 'Xe thương mại 16-18 chỗ hàng đầu, lựa chọn số 1 cho vận tải hành khách và doanh nghiệp.',
           display_order: 5,
           is_visible: true,
-          price_from: '905000000',
+          price_from: '907000000',
           versions: [
             {
               name: 'Ford Transit Hoàn Toàn Mới — Trend 16 chỗ',
               image_url: '/uploads/cars/transit/versions/ford_transit_the_he_moi_trend_16_cho.png',
-              base_price: '905000000',
+              base_price: '907000000',
               short_desc: 'Phiên bản tiêu chuẩn 16 chỗ, tối ưu cho vận tải hành khách.',
               display_order: 1,
               is_visible: true,
@@ -622,7 +622,7 @@ export default {
             {
               name: 'Ford Transit Hoàn Toàn Mới — Premium 16 chỗ',
               image_url: '/uploads/cars/transit/versions/ford_transit_the_he_moi_premium_16_cho.png',
-              base_price: '985000000',
+              base_price: '999000000',
               short_desc: 'Phiên bản nâng cấp 16 chỗ với tiện nghi tốt hơn.',
               display_order: 2,
               is_visible: true,
@@ -684,12 +684,12 @@ export default {
           description: 'SUV thuần điện đầu tiên của Ford, kết hợp tinh thần Mustang với công nghệ xe điện tiên tiến nhất.',
           display_order: 6,
           is_visible: true,
-          price_from: '1599000000',
+          price_from: '1699000000',
           versions: [
             {
               name: 'Ford Mustang Mach-E — Premium AWD',
               image_url: null,
-              base_price: '1599000000',
+              base_price: '1699000000',
               short_desc: 'SUV thuần điện nhập khẩu, 480km/lần sạc, công nghệ hàng đầu.',
               display_order: 1,
               is_visible: true,

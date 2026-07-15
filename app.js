@@ -153,6 +153,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Sort colors: default first, then by display_order
                 allColors.sort((a, b) => (b.is_default ? 1 : 0) - (a.is_default ? 1 : 0));
 
+                // Hot patch for prices (Strapi returns Draft/Old published data)
+                const hotpatchVersions = {
+                    'Ford Territory Thế Hệ Mới — Trend 1.5L AT': '739000000',
+                    'Ford Territory Thế Hệ Mới — Titanium 1.5L AT': '819000000',
+                    'Ford Territory Thế Hệ Mới — Titanium X 1.5L AT': '875000000',
+                    'Ford Everest Thế Hệ Mới — Active 2.0L AT 4x2': '1129000000',
+                    'Ford Everest Thế Hệ Mới — Sport 2.0L AT 4x2': '1209000000',
+                    'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x4': '1440000000',
+                    'Ford Ranger Thế Hệ Mới — XLS 4x2 AT': '707000000',
+                    'Ford Ranger Raptor Thế Hệ Mới — 3.0L V6 Twin-Turbo': '1448000000',
+                    'Ford Transit Hoàn Toàn Mới — Trend 16 chỗ': '907000000',
+                    'Ford Transit Hoàn Toàn Mới — Premium 16 chỗ': '999000000',
+                    'Ford Mustang Mach-E — Premium AWD': '1699000000'
+                };
+
                 // Build versions array
                 const versions = (liveCar.versions || [])
                     .filter(v => v.is_visible !== false && !v.name.includes('2.0L Bi-Turbo 4WD'))
@@ -160,11 +175,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     .map(v => {
                         const defaultColor = allColors.find(c => c.is_default) || allColors[0] || { name: '', image: '' };
                         const versionThumbnail = getStrapiImageUrl(v.thumbnail) || defaultColor.image || carThumbnailUrl;
+                        const finalBasePrice = hotpatchVersions[v.name] || v.base_price;
 
                         return {
                             name: v.name,
-                            price: formatPrice(v.base_price),
-                            rawPrice: parseInt(v.base_price) || 0,
+                            price: formatPrice(finalBasePrice),
+                            rawPrice: parseInt(finalBasePrice) || 0,
                             defaultColor: defaultColor.name,
                             image: versionThumbnail,
                             image_url: v.image_url || null,
@@ -208,6 +224,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         type: g.image_type || 'exterior'
                     }));
 
+                const hotpatchCars = {
+                    'territory': '739000000',
+                    'everest': '1129000000',
+                    'ranger': '707000000',
+                    'ranger-raptor': '1448000000',
+                    'transit': '907000000',
+                    'mustang-mach-e': '1699000000'
+                };
+                const finalCarPrice = hotpatchCars[slug] || liveCar.price_from;
+
                 // Store in carDetailsDB keyed by slug (clean, unique)
                 carDetailsDB[slug] = {
                     name: liveCar.name,
@@ -216,8 +242,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     description: liveCar.description || '',
                     image: carThumbnailUrl || (allColors[0] && allColors[0].image) || '',
                     brochure: liveCar.brochure_url || '#',
-                    price_from: formatPrice(liveCar.price_from),
-                    rawPriceFrom: parseInt(liveCar.price_from) || 0,
+                    price_from: formatPrice(finalCarPrice),
+                    rawPriceFrom: parseInt(finalCarPrice) || 0,
                     colors: allColors.length > 0 ? allColors : [{ name: 'Mặc định', hex: '#888888', image: '' }],
                     versions: versions,
                     gallery: gallery,

@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let carDetailsDB = {};
 
     // Strapi API base URL
-    const API_BASE = 'https://slzzo-103-156-58-228.run.pinggy-free.link';
+    const API_BASE = 'https://api.fordquynhon.vn';
 
     // Helper: format price number to Vietnamese display
     function formatPrice(priceStr) {

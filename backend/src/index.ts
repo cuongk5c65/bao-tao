@@ -531,7 +531,7 @@ export default {
               base_price: '1299000000',
               short_desc: 'Raptor phiên bản Bi-Turbo dành cho dân chơi off-road.',
               display_order: 1,
-              is_visible: true,
+              is_visible: false,
               engine_type: 'Dầu 2.0L Bi-Turbo',
               max_power: '210 HP @ 3750 rpm',
               max_torque: '500 Nm @ 1750-2000 rpm',

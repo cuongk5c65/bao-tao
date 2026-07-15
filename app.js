@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Build versions array
                 const versions = (liveCar.versions || [])
-                    .filter(v => v.is_visible !== false)
+                    .filter(v => v.is_visible !== false && !v.name.includes('2.0L Bi-Turbo 4WD'))
                     .sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
                     .map(v => {
                         const defaultColor = allColors.find(c => c.is_default) || allColors[0] || { name: '', image: '' };

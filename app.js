@@ -398,6 +398,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 consultCarSelect.innerHTML += `<option value="${car.slug}">${car.name}</option>`;
             });
         }
+
+        // Populate welcome lead modal car dropdown from API data
+        const welcomeCarSelect = document.getElementById('welcome-lead-car');
+        if (welcomeCarSelect) {
+            const currentSelected = welcomeCarSelect.value;
+            welcomeCarSelect.innerHTML = '<option value="" disabled selected>Chọn dòng xe quan tâm *</option>';
+            Object.values(carDetailsDB).forEach(car => {
+                const opt = document.createElement('option');
+                opt.value = car.name;
+                opt.textContent = car.name;
+                if (currentSelected === car.name) opt.selected = true;
+                welcomeCarSelect.appendChild(opt);
+            });
+        }
     }
 
     syncStrapiData();
@@ -420,7 +434,13 @@ document.addEventListener('DOMContentLoaded', () => {
             frame.scrollTop = 0;
         }
         window.scrollTo(0, 0);
+
+        // Schedule popup after 3s when entering or changing to any view/subpage
+        if (typeof scheduleLeadPopup === 'function') {
+            scheduleLeadPopup(3000);
+        }
     }
+    window.switchView = switchView;
 
     // Check if the car image needs to be flipped to face left
     function checkNeedsFlip(carKey) {
@@ -474,7 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 1. Show Car Versions View (2-column grid of cards with real image assets)
-    function showCarVersions(carKey) {
+    function showCarVersions(carKey, backTarget = 'home-view') {
         const car = carDetailsDB[carKey];
         if (car) {
             let cardsHtml = '';
@@ -497,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const versionsView = document.getElementById('versions-view');
             versionsView.innerHTML = `
-                ${generateViewHeader(`PHIÊN BẢN - ${car.name.toUpperCase()}`, 'home-view')}
+                ${generateViewHeader(`PHIÊN BẢN - ${car.name.toUpperCase()}`, backTarget)}
                 <div class="versions-view-body">
                     <div class="version-grid-2col">
                         ${cardsHtml}
@@ -513,13 +533,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.addEventListener('click', () => {
                     const cKey = card.getAttribute('data-car');
                     const vIndex = parseInt(card.getAttribute('data-index'));
-                    showVersionDetails(cKey, vIndex);
+                    showVersionDetails(cKey, vIndex, backTarget);
                 });
             });
 
             // Bind Header Back Button
-            versionsView.querySelector('.view-back-btn').addEventListener('click', () => {
-                switchView('home-view');
+            versionsView.querySelector('.view-back-btn').addEventListener('click', (e) => {
+                const target = e.currentTarget.getAttribute('data-target') || 'home-view';
+                switchView(target);
             });
         }
     }
@@ -823,6 +844,239 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }
+    }
+
+    // 3. Show Price Article View (Bảng Giá Xe Ford Mới Nhất Tại Quy Nhơn)
+    function showPriceArticleView() {
+        const articleView = document.getElementById('article-price-view');
+        if (!articleView) return;
+
+        const carSections = [
+            {
+                key: 'everest',
+                categoryName: 'SUV 7 Chỗ Đẳng Cấp',
+                title: 'Giá Ford Everest tại Quy Nhơn',
+                image: 'assets/slides/hero_everest.png',
+                icon: 'fa-shield-halved',
+                defaultPrice: '1.099.000.000đ',
+                versions: [
+                    { name: 'Ford Everest Ambient 2.0L AT 4x2', price: '1.099.000.000đ' },
+                    { name: 'Ford Everest Sport 2.0L AT 4x2', price: '1.209.000.000đ' },
+                    { name: 'Ford Everest Titanium 2.0L AT 4x2', price: '1.299.000.000đ' },
+                    { name: 'Ford Everest Titanium+ 2.0L AT 4x4', price: '1.468.000.000đ' },
+                    { name: 'Ford Everest Platinum 2.0L AT 4x4', price: '1.440.000.000đ' },
+                    { name: 'Ford Everest Platinum+ 2.3L AT 4x4', price: '1.629.000.000đ' }
+                ]
+            },
+            {
+                key: 'ranger',
+                categoryName: 'Vua Bán Tải Đa Dụng',
+                title: 'Giá Ford Ranger tại Quy Nhơn',
+                image: 'assets/slides/hero_ranger.png',
+                icon: 'fa-truck-pickup',
+                defaultPrice: '659.000.000đ',
+                versions: [
+                    { name: 'Ford Ranger XLS 4x2 AT', price: '707.000.000đ' },
+                    { name: 'Ford Ranger XLS 4x4 AT', price: '776.000.000đ' },
+                    { name: 'Ford Ranger Sport 4x4 AT', price: '864.000.000đ' },
+                    { name: 'Ford Ranger Wildtrak 4x4 AT', price: '979.000.000đ' },
+                    { name: 'Ford Ranger Stormtrak 4x4 AT', price: '1.039.000.000đ' }
+                ]
+            },
+            {
+                key: 'ranger-raptor',
+                categoryName: 'Siêu Bán Tải Off-Road',
+                title: 'Giá Ford Ranger Raptor tại Quy Nhơn',
+                image: 'assets/slides/hero_raptor.png',
+                icon: 'fa-gauge-high',
+                defaultPrice: '1.448.000.000đ',
+                versions: [
+                    { name: 'Ford Ranger Raptor 3.0L V6 Twin-Turbo', price: '1.448.000.000đ' }
+                ]
+            },
+            {
+                key: 'territory',
+                categoryName: 'SUV 5 Chỗ Đô Thị Thông Minh',
+                title: 'Giá Ford Territory tại Quy Nhơn',
+                image: 'assets/slides/hero_territory.png',
+                icon: 'fa-car-side',
+                defaultPrice: '739.000.000đ',
+                versions: [
+                    { name: 'Ford Territory Trend 1.5L AT', price: '739.000.000đ' },
+                    { name: 'Ford Territory Titanium 1.5L AT', price: '819.000.000đ' },
+                    { name: 'Ford Territory Titanium X 1.5L AT', price: '875.000.000đ' }
+                ]
+            },
+            {
+                key: 'transit',
+                categoryName: 'Xe Thương Mại 16 - 18 Chỗ',
+                title: 'Giá Ford Transit tại Quy Nhơn',
+                image: 'assets/slides/banner_transit.webp',
+                icon: 'fa-van-shuttle',
+                defaultPrice: '907.000.000đ',
+                versions: [
+                    { name: 'Ford Transit Trend 16 chỗ', price: '907.000.000đ' },
+                    { name: 'Ford Transit Premium 16 chỗ', price: '999.000.000đ' },
+                    { name: 'Ford Transit Premium+ 18 chỗ', price: '1.070.000.000đ' }
+                ]
+            },
+            {
+                key: 'mustang-mach-e',
+                categoryName: 'Xe Điện Thể Thao Thuần Khiết',
+                title: 'Giá Ford Mustang Mach-E tại Quy Nhơn',
+                image: 'assets/slides/hero_mache.png',
+                icon: 'fa-bolt',
+                defaultPrice: '1.699.000.000đ',
+                versions: [
+                    { name: 'Ford Mustang Mach-E Premium AWD', price: '1.699.000.000đ' }
+                ]
+            }
+        ];
+
+        let cardsHtml = '';
+        carSections.forEach(sec => {
+            const liveCar = carDetailsDB[sec.key];
+            const versions = (liveCar && liveCar.versions && liveCar.versions.length > 0)
+                ? liveCar.versions.map(v => ({ name: v.name, price: v.price }))
+                : sec.versions;
+            const startPrice = (liveCar && liveCar.price_from) ? liveCar.price_from : sec.defaultPrice;
+            const carImg = sec.image;
+
+            let versionRows = '';
+            versions.forEach(v => {
+                versionRows += `
+                    <div class="article-version-row">
+                        <span class="v-name"><i class="fa-solid fa-circle-check"></i> ${v.name}</span>
+                        <span class="v-price">${v.price}</span>
+                    </div>
+                `;
+            });
+
+            cardsHtml += `
+                <div class="article-car-card">
+                    <div class="article-card-head">
+                        <div class="article-card-badge"><i class="fa-solid ${sec.icon}"></i> ${sec.categoryName}</div>
+                        <h3 class="article-card-title">${sec.title}</h3>
+                        <div class="article-card-price-tag">
+                            <span>Giá niêm yết từ:</span> <strong>${startPrice}</strong>
+                        </div>
+                    </div>
+                    <div class="article-card-img-wrap">
+                        <img src="${carImg}" alt="${sec.title}" onerror="this.style.display='none'">
+                    </div>
+                    <div class="article-version-table">
+                        <div class="article-table-header">
+                            <span>Phiên bản phân phối</span>
+                            <span>Giá niêm yết</span>
+                        </div>
+                        ${versionRows}
+                    </div>
+                    <div class="article-card-action">
+                        <button class="btn btn-primary btn-article-see-more" data-car="${sec.key}">
+                            <span>Xem thêm phiên bản ${liveCar ? liveCar.name : sec.key.toUpperCase()}</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+
+        articleView.innerHTML = `
+            ${generateViewHeader('BẢNG GIÁ XE FORD MỚI NHẤT', 'home-view')}
+            <div class="article-view-body">
+                <div class="article-hero-banner-wrap">
+                    <img src="assets/thumb_gia_xe_ford_2026.png" alt="Bảng Giá Xe Ford 2026">
+                </div>
+                <div class="article-meta-banner">
+                    <span class="section-tag"><i class="fa-solid fa-newspaper"></i> Tin tức & Bảng giá</span>
+                    <h1 class="article-heading">BẢNG GIÁ XE FORD MỚI NHẤT TẠI QUY NHƠN</h1>
+                    <div class="article-meta-row">
+                        <span><i class="fa-regular fa-calendar"></i> Cập nhật: 04/10/2026</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Dana Ford Quy Nhơn</span>
+                        <span><i class="fa-solid fa-user-tie"></i> Phụ trách: Mr Gia Bảo</span>
+                    </div>
+                    <p class="article-lead-text">
+                        Bảo Táo - Dana Ford Bình Định trân trọng gửi tới quý khách hàng bảng tổng hợp giá xe Ford mới nhất năm 2026. Chương trình áp dụng hỗ trợ giảm thuế trước bạ, tặng gói phụ kiện cao cấp và hỗ trợ thủ tục mua xe trả góp lãi suất ưu đãi nhận xe ngay trong tháng.
+                    </p>
+                </div>
+
+                <div class="article-car-list">
+                    ${cardsHtml}
+                </div>
+
+                <!-- Promotion & Consultation Callout Box -->
+                <div class="article-promo-box">
+                    <div class="promo-box-icon"><i class="fa-solid fa-gift"></i></div>
+                    <h4 class="promo-box-title">CHÍNH SÁCH ƯU ĐÃI ĐẶC QUYỀN THÁNG NÀY</h4>
+                    <ul class="promo-box-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Hỗ trợ tiền mặt trực tiếp và quà tặng phụ kiện chính hãng.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Hỗ trợ vay mua xe trả góp lên đến 85% giá trị xe, thủ tục nhanh gọn trong 24h.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Đăng ký lái thử tận nhà miễn phí trên toàn địa bàn Quy Nhơn & lân cận.</li>
+                    </ul>
+                    <div class="promo-box-btns">
+                        <a href="tel:0362193864" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Gọi Hotline Em Bảo</a>
+                        <button class="btn btn-primary" id="btn-article-consult"><i class="fa-solid fa-paper-plane"></i> Nhận Báo Giá Lăn Bánh</button>
+                    </div>
+                </div>
+            </div>
+            ${generateViewFooter()}
+        `;
+
+        switchView('article-price-view');
+
+        // Bind back button
+        articleView.querySelector('.view-back-btn').addEventListener('click', () => {
+            switchView('home-view');
+            const newsSec = document.getElementById('news-section');
+            if (newsSec) newsSec.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Bind "Xem thêm" buttons to go into versions view of that car
+        articleView.querySelectorAll('.btn-article-see-more').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const carKey = btn.getAttribute('data-car');
+                showCarVersions(carKey, 'article-price-view');
+            });
+        });
+
+        // Bind consult button
+        const consultBtn = articleView.querySelector('#btn-article-consult');
+        if (consultBtn) {
+            consultBtn.addEventListener('click', () => {
+                switchView('home-view');
+                const target = document.getElementById('consultation-section');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        }
+    }
+    window.showPriceArticleView = showPriceArticleView;
+
+    // Bind Bảng Giá Xe Ford Article triggers
+    const btnOpenPriceArticle = document.getElementById('btn-open-price-article');
+    const cardPriceArticle = document.getElementById('card-price-article');
+    const bannerOpenPrice = document.getElementById('banner-open-price-article');
+
+    if (btnOpenPriceArticle) {
+        btnOpenPriceArticle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            showPriceArticleView();
+        });
+    }
+
+    if (cardPriceArticle) {
+        cardPriceArticle.addEventListener('click', (e) => {
+            if (e.target.closest('a')) return;
+            showPriceArticleView();
+        });
+    }
+
+    if (bannerOpenPrice) {
+        bannerOpenPrice.addEventListener('click', () => {
+            showPriceArticleView();
+        });
     }
 
     // Bind Showroom Card clicks to open version list page
@@ -1355,5 +1609,145 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (calcModal) {
         calcModal.addEventListener('click', (e) => { if (e.target === calcModal) calcModal.classList.remove('active'); });
+    }
+
+    // ---- WELCOME LEAD POPUP (Xuất hiện sau 3s khi vào trang / trang con; tắt đi 15s sau bật lại) ----
+    const welcomeModal = document.getElementById('welcome-lead-modal');
+    const btnCloseWelcome = document.getElementById('btn-close-welcome-lead');
+    const welcomeForm = document.getElementById('welcome-lead-form');
+    const welcomeCarSelect = document.getElementById('welcome-lead-car');
+
+    let leadPopupTimer = null;
+    let leadReopenTimer = null;
+    let isLeadSubmitted = sessionStorage.getItem('welcome_lead_submitted') === 'true';
+
+    function openLeadPopup() {
+        if (isLeadSubmitted) return;
+        if (welcomeModal && !welcomeModal.classList.contains('active')) {
+            welcomeModal.classList.add('active');
+        }
+    }
+
+    function scheduleLeadPopup(delayMs = 3000) {
+        if (isLeadSubmitted) return;
+        if (leadPopupTimer) clearTimeout(leadPopupTimer);
+        if (leadReopenTimer) clearTimeout(leadReopenTimer);
+
+        // Nếu popup đang mở thì không set lại
+        if (welcomeModal && welcomeModal.classList.contains('active')) return;
+
+        leadPopupTimer = setTimeout(() => {
+            openLeadPopup();
+        }, delayMs);
+    }
+    // Make available globally in DOMContentLoaded
+    window.scheduleLeadPopup = scheduleLeadPopup;
+
+    function closeLeadPopup() {
+        if (welcomeModal) {
+            welcomeModal.classList.remove('active');
+        }
+        if (leadPopupTimer) clearTimeout(leadPopupTimer);
+        if (leadReopenTimer) clearTimeout(leadReopenTimer);
+
+        // Nếu người xem tắt đi thì 15s sau lại bật lên lần nữa
+        if (!isLeadSubmitted) {
+            leadReopenTimer = setTimeout(() => {
+                openLeadPopup();
+            }, 15000);
+        }
+    }
+
+    // Fallback options while API data is loading
+    if (welcomeCarSelect && welcomeCarSelect.options.length <= 1) {
+        const fallbackCars = [
+            'Ford Everest Thế Hệ Mới',
+            'Ford Ranger Thế Hệ Mới',
+            'Ford Ranger Raptor Thế Hệ Mới',
+            'Ford Territory Thế Hệ Mới',
+            'Ford Transit Hoàn Toàn Mới',
+            'Ford Mustang Mach-E'
+        ];
+        fallbackCars.forEach(carName => {
+            const opt = document.createElement('option');
+            opt.value = carName;
+            opt.textContent = carName;
+            welcomeCarSelect.appendChild(opt);
+        });
+    }
+
+    // Tự động mở popup sau 3s khi vừa tải trang
+    scheduleLeadPopup(3000);
+
+    if (btnCloseWelcome) {
+        btnCloseWelcome.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeLeadPopup();
+        });
+    }
+
+    if (welcomeModal) {
+        welcomeModal.addEventListener('click', (e) => {
+            if (e.target === welcomeModal) {
+                closeLeadPopup();
+            }
+        });
+    }
+
+    if (welcomeForm) {
+        welcomeForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('welcome-lead-name').value.trim();
+            const phone = document.getElementById('welcome-lead-phone').value.trim();
+            const car = document.getElementById('welcome-lead-car').value;
+
+            if (!name || !phone || !car) return;
+
+            const submitBtn = document.getElementById('welcome-lead-submit');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Đang gửi...';
+            }
+
+            try {
+                await fetch(API_BASE + '/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        data: {
+                            customer_name: name,
+                            phone: phone,
+                            interested_car: car,
+                            status: 'Mới'
+                        }
+                    })
+                });
+
+                // Khách đã gửi thành công: Đánh dấu đã gửi và hủy toàn bộ timer bật lại
+                isLeadSubmitted = true;
+                sessionStorage.setItem('welcome_lead_submitted', 'true');
+                if (leadPopupTimer) clearTimeout(leadPopupTimer);
+                if (leadReopenTimer) clearTimeout(leadReopenTimer);
+
+                if (welcomeModal) welcomeModal.classList.remove('active');
+                welcomeForm.reset();
+
+                const successPopup = document.getElementById('success-popup');
+                if (successPopup) {
+                    successPopup.classList.add('active');
+                    setTimeout(() => {
+                        successPopup.classList.remove('active');
+                    }, 4000);
+                }
+            } catch (err) {
+                console.error("Lỗi gửi thông tin khách hàng:", err);
+                alert("Gửi thông tin chưa thành công. Quý khách vui lòng thử lại!");
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>GỬI YÊU CẦU BÁO GIÁ NGAY</span><i class="fa-solid fa-paper-plane"></i>';
+                }
+            }
+        });
     }
 });

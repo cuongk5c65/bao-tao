@@ -2049,3 +2049,465 @@ a, button, select, input, [role="button"] {
 .hero-cta-btn i {
     font-size: 14px;
 }
+
+/* --- Welcome Lead Popup --- */
+.welcome-lead-content {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 32px 24px 38px 24px;
+}
+
+.welcome-lead-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.welcome-lead-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #ffefe5, #ffe4d6);
+    color: #d9480f;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(217, 72, 15, 0.18);
+}
+
+.welcome-lead-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ford-blue-dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+    line-height: 1.35;
+}
+
+.welcome-lead-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.welcome-lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.welcome-submit-btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 13px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-sm);
+}
+
+.welcome-lead-privacy {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* --- News Price Article Banner & Card --- */
+.news-price-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #001e46 0%, #003478 100%);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 52, 120, 0.2);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.news-price-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 52, 120, 0.3);
+}
+
+.banner-left .banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.banner-left .banner-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.2px;
+}
+
+.banner-left .banner-sub {
+    font-size: 11px;
+    color: #cbd5e1;
+    margin-top: 2px;
+}
+
+.banner-right .banner-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.featured-price-card {
+    border: 2px solid var(--ford-blue) !important;
+    position: relative;
+}
+
+.featured-price-card .news-badge-hot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
+}
+
+.btn-read-price-article {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+/* --- Article Detail View: Bảng Giá Xe Ford --- */
+.article-view-body {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.article-meta-banner {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    border: 1px solid var(--border-slate);
+    box-shadow: var(--shadow-soft);
+}
+
+.article-heading {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--ford-blue-dark);
+    margin: 10px 0 8px 0;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+.article-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-slate);
+}
+
+.article-meta-row span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.article-lead-text {
+    font-size: 13px;
+    color: var(--text-charcoal);
+    line-height: 1.6;
+}
+
+.article-car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.article-car-card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-slate);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-fast);
+}
+
+.article-car-card:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: #cbd5e1;
+}
+
+.article-card-head {
+    padding: 16px 16px 12px 16px;
+    background-color: #ffffff;
+}
+
+.article-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 52, 120, 0.08);
+    color: var(--ford-blue);
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 6px;
+}
+
+.article-card-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--ford-blue-dark);
+    line-height: 1.35;
+    letter-spacing: -0.2px;
+}
+
+.article-card-price-tag {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.article-card-price-tag strong {
+    color: #d92d20;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.article-card-img-wrap {
+    width: 100%;
+    height: 200px;
+    background-color: #0c1424;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--border-slate);
+    padding: 0;
+}
+
+.article-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.article-car-card:hover .article-card-img-wrap img {
+    transform: scale(1.03);
+}
+
+.article-hero-banner-wrap {
+    width: 100%;
+    height: 180px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 16px;
+    border: 1px solid var(--border-slate);
+}
+
+.article-hero-banner-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.article-version-table {
+    padding: 10px 16px;
+    background-color: #fafbfc;
+    border-top: 1px solid var(--border-slate);
+    border-bottom: 1px solid var(--border-slate);
+}
+
+.article-table-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--border-slate);
+    margin-bottom: 6px;
+}
+
+.article-version-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 12.5px;
+}
+
+.article-version-row:last-child {
+    border-bottom: none;
+}
+
+.article-version-row .v-name {
+    font-weight: 600;
+    color: var(--text-charcoal);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    padding-right: 8px;
+}
+
+.article-version-row .v-name i {
+    color: #16a34a;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.article-version-row .v-price {
+    font-weight: 700;
+    color: var(--ford-blue-dark);
+    flex-shrink: 0;
+}
+
+.article-card-action {
+    padding: 14px 16px;
+    background-color: #ffffff;
+}
+
+.btn-article-see-more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--ford-blue) 0%, var(--ford-blue-light) 100%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 52, 120, 0.2);
+    transition: var(--transition-fast);
+}
+
+.btn-article-see-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 52, 120, 0.3);
+}
+
+.article-promo-box {
+    background: linear-gradient(135deg, #001e46 0%, #003478 100%);
+    border-radius: var(--radius-lg);
+    padding: 20px 16px;
+    color: #ffffff;
+    box-shadow: var(--shadow-soft);
+    margin-top: 10px;
+}
+
+.promo-box-icon {
+    font-size: 24px;
+    color: #f59e0b;
+    margin-bottom: 8px;
+}
+
+.promo-box-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff !important;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.promo-box-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: #e2e8f0;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.promo-box-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.promo-box-list li i {
+    color: #22c55e;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.promo-box-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.promo-box-btns .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+}
+
+

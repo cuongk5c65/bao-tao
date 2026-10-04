@@ -252,8 +252,34 @@
                 <h3 class="section-title-main">TIN NỔI BẬT</h3>
             </div>
             
+            <div class="news-price-banner" id="banner-open-price-article">
+                <div class="banner-left">
+                    <span class="banner-badge"><i class="fa-solid fa-fire"></i> MỚI CẬP NHẬT</span>
+                    <h4 class="banner-title">BẢNG GIÁ XE FORD MỚI NHẤT</h4>
+                    <p class="banner-sub">Xem chi tiết bảng giá 6 dòng xe tại Dana Ford Quy Nhơn</p>
+                </div>
+                <div class="banner-right">
+                    <button class="banner-btn" aria-label="Xem bảng giá"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
             <div class="swiper news-slider">
                 <div class="swiper-wrapper">
+                    <!-- Featured Article: Bảng Giá Xe Ford Mới Nhất -->
+                    <div class="swiper-slide news-card featured-price-card" id="card-price-article">
+                        <div class="news-img-wrapper">
+                            <span class="news-badge-hot"><i class="fa-solid fa-star"></i> BẢNG GIÁ</span>
+                            <img loading="lazy" src="assets/thumb_gia_xe_ford_2026.png" alt="Giá Xe Ford 2026" class="news-img" style="object-fit: cover;">
+                        </div>
+                        <div class="news-body">
+                            <span class="news-date"><i class="fa-regular fa-calendar"></i> 04/10/2026 • Dana Ford Quy Nhơn</span>
+                            <h4 class="news-title">BẢNG GIÁ XE FORD MỚI NHẤT TẠI QUY NHƠN</h4>
+                            <p class="news-excerpt">Tổng hợp bảng giá niêm yết các dòng xe Everest, Ranger, Raptor, Territory, Transit, Mustang Mach-E mới nhất...</p>
+                            <button class="news-link btn-read-price-article" id="btn-open-price-article">
+                                <span>Xem chi tiết bảng giá</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
                     <!-- Article 1 -->
                     <div class="swiper-slide news-card">
                         <div class="news-img-wrapper">
@@ -332,6 +358,9 @@
 
         <!-- Page View 3: Detail View -->
         <div id="detail-view" class="page-view" style="display: none;"></div>
+
+        <!-- Page View 4: Price Article Detail View -->
+        <div id="article-price-view" class="page-view" style="display: none;"></div>
 
         <!-- Mobile Sticky CTA Bar -->
         <div class="mobile-cta-bar" id="mobile-cta-bar">
@@ -464,6 +493,39 @@
         </div>
 
 
+        <!-- Welcome Lead Popup (Tự động xuất hiện khi vào web) -->
+        <div class="modal" id="welcome-lead-modal">
+            <div class="modal-content welcome-lead-content">
+                <button class="modal-close" id="btn-close-welcome-lead" aria-label="Đóng">&times;</button>
+                <div class="welcome-lead-header">
+                    <div class="welcome-lead-badge"><i class="fa-solid fa-gift"></i> ƯU ĐÃI ĐỘC QUYỀN HÔM NAY</div>
+                    <h3 class="welcome-lead-title">NHẬN BÁO GIÁ & ƯU ĐÃI ĐẶC BIỆT</h3>
+                    <p class="welcome-lead-desc">Để lại thông tin để nhận bảng giá lăn bánh mới nhất và gói phụ kiện chính hãng từ Bảo Táo Ford.</p>
+                </div>
+                <form id="welcome-lead-form" class="welcome-lead-form">
+                    <div class="form-group-with-icon">
+                        <i class="fa-solid fa-car input-icon"></i>
+                        <select id="welcome-lead-car" name="car" required>
+                            <option value="" disabled selected>Chọn dòng xe quan tâm *</option>
+                        </select>
+                    </div>
+                    <div class="form-group-with-icon">
+                        <i class="fa-solid fa-user input-icon"></i>
+                        <input type="text" id="welcome-lead-name" name="name" placeholder="Họ và Tên *" required>
+                    </div>
+                    <div class="form-group-with-icon">
+                        <i class="fa-solid fa-phone input-icon"></i>
+                        <input type="tel" id="welcome-lead-phone" name="phone" placeholder="Số Điện Thoại (Zalo) *" pattern="[0-9]{10}" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary welcome-submit-btn" id="welcome-lead-submit">
+                        <span>GỬI YÊU CẦU BÁO GIÁ NGAY</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p class="welcome-lead-privacy"><i class="fa-solid fa-shield-halved"></i> Thông tin được cam kết bảo mật 100%</p>
+                </form>
+            </div>
+        </div>
+
         <!-- Success Notification Popup -->
         <div class="success-popup" id="success-popup">
             <i class="fa-solid fa-circle-check popup-icon"></i>
@@ -476,6 +538,6 @@
     <!-- Swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JavaScript -->
-    <script src="app.js?v=14"></script>
+    <script src="app.js?v=18"></script>
 </body>
 </html>

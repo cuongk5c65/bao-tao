@@ -258,7 +258,7 @@ export default {
             {
               name: 'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x2',
               image_url: '/uploads/cars/everest/versions/ford_everest_moi_titanium_2_0l_at_4x2.png',
-              base_price: '1399000000',
+              base_price: '1353000000',
               short_desc: 'Phiên bản sang trọng với nội thất cao cấp, ADAS đầy đủ.',
               display_order: 3,
               is_visible: true,
@@ -353,12 +353,12 @@ export default {
           description: 'Bán tải hàng đầu Việt Nam với thiết kế cứng cáp, công nghệ hiện đại và khả năng vận hành vượt trội.',
           display_order: 3,
           is_visible: true,
-          price_from: '707000000',
+          price_from: '726000000',
           versions: [
             {
               name: 'Ford Ranger Thế Hệ Mới — XLS 4x2 AT',
               image_url: '/uploads/cars/ranger/versions/ford_ranger_xls_4x2.png',
-              base_price: '707000000',
+              base_price: '726000000',
               short_desc: 'Phiên bản tiêu chuẩn dành cho công việc và gia đình.',
               display_order: 1,
               is_visible: true,
@@ -382,7 +382,7 @@ export default {
             {
               name: 'Ford Ranger Thế Hệ Mới — XLS 4x4 AT',
               image_url: '/uploads/cars/ranger/versions/ford_ranger_xls_4x4.png',
-              base_price: '759000000',
+              base_price: '795000000',
               short_desc: 'Phiên bản XLS dẫn động 4 bánh cho địa hình đa dạng.',
               display_order: 2,
               is_visible: true,
@@ -409,7 +409,7 @@ export default {
               base_price: '859000000',
               short_desc: 'Phiên bản thể thao với Bi-Turbo mạnh mẽ và ngoại thất nổi bật.',
               display_order: 3,
-              is_visible: true,
+              is_visible: false,
               engine_type: 'Dầu 2.0L Bi-Turbo',
               max_power: '210 HP @ 3750 rpm',
               max_torque: '500 Nm @ 1750-2000 rpm',
@@ -430,7 +430,7 @@ export default {
             {
               name: 'Ford Ranger Thế Hệ Mới — Wildtrak AT 4x4',
               image_url: '/uploads/cars/ranger/versions/ford_ranger_moi_2026_wildtrak_3_0.png',
-              base_price: '979000000',
+              base_price: '973000000',
               short_desc: 'Phiên bản cao cấp với ADAS, camera 360 và nội thất sang trọng.',
               display_order: 4,
               is_visible: true,
@@ -459,7 +459,7 @@ export default {
               base_price: '1039000000',
               short_desc: 'Phiên bản đặc biệt với nắp thùng điện và phong cách thể thao.',
               display_order: 5,
-              is_visible: true,
+              is_visible: false,
               engine_type: 'Dầu 2.0L Bi-Turbo',
               max_power: '210 HP @ 3750 rpm',
               max_torque: '500 Nm @ 1750-2000 rpm',
@@ -483,7 +483,7 @@ export default {
             {
               name: 'Ford Ranger Thế Hệ Mới — Wildtrak 3.0L V6 AT 4x4',
               image_url: '/uploads/cars/ranger/versions/ford_ranger_moi_2026_wildtrak_3_0.png',
-              base_price: '1199000000',
+              base_price: '1093000000',
               short_desc: 'Phiên bản Wildtrak đỉnh cao với động cơ V6 3.0L siêu mạnh.',
               display_order: 6,
               is_visible: true,

@@ -160,8 +160,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Ford Territory Thế Hệ Mới — Titanium X 1.5L AT': '875000000',
                     'Ford Everest Thế Hệ Mới — Active 2.0L AT 4x2': '1129000000',
                     'Ford Everest Thế Hệ Mới — Sport 2.0L AT 4x2': '1209000000',
+                    'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x2': '1353000000',
                     'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x4': '1440000000',
-                    'Ford Ranger Thế Hệ Mới — XLS 4x2 AT': '707000000',
+                    'Ford Ranger Thế Hệ Mới — XLS 4x2 AT': '726000000',
+                    'Ford Ranger Thế Hệ Mới — XLS 4x4 AT': '795000000',
+                    'Ford Ranger Thế Hệ Mới — Wildtrak AT 4x4': '973000000',
+                    'Ford Ranger Thế Hệ Mới — Wildtrak 3.0L V6 AT 4x4': '1093000000',
                     'Ford Ranger Raptor Thế Hệ Mới — 3.0L V6 Twin-Turbo': '1448000000',
                     'Ford Transit Hoàn Toàn Mới — Trend 16 chỗ': '907000000',
                     'Ford Transit Hoàn Toàn Mới — Premium 16 chỗ': '999000000',
@@ -170,7 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Build versions array
                 const versions = (liveCar.versions || [])
-                    .filter(v => v.is_visible !== false && !v.name.includes('2.0L Bi-Turbo 4WD'))
+                    .filter(v =>
+                        v.is_visible !== false &&
+                        !v.name.includes('2.0L Bi-Turbo 4WD') &&
+                        !v.name.includes('Stormtrak') &&
+                        !v.name.includes('Sport 4x4 AT')
+                    )
                     .sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
                     .map(v => {
                         const defaultColor = allColors.find(c => c.is_default) || allColors[0] || { name: '', image: '' };
@@ -227,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const hotpatchCars = {
                     'territory': '739000000',
                     'everest': '1129000000',
-                    'ranger': '707000000',
+                    'ranger': '726000000',
                     'ranger-raptor': '1448000000',
                     'transit': '907000000',
                     'mustang-mach-e': '1699000000'
@@ -858,14 +867,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: 'Giá Ford Everest tại Quy Nhơn',
                 image: 'assets/slides/hero_everest.png',
                 icon: 'fa-shield-halved',
-                defaultPrice: '1.099.000.000đ',
+                defaultPrice: '1.129.000.000đ',
                 versions: [
-                    { name: 'Ford Everest Ambient 2.0L AT 4x2', price: '1.099.000.000đ' },
-                    { name: 'Ford Everest Sport 2.0L AT 4x2', price: '1.209.000.000đ' },
-                    { name: 'Ford Everest Titanium 2.0L AT 4x2', price: '1.299.000.000đ' },
-                    { name: 'Ford Everest Titanium+ 2.0L AT 4x4', price: '1.468.000.000đ' },
-                    { name: 'Ford Everest Platinum 2.0L AT 4x4', price: '1.440.000.000đ' },
-                    { name: 'Ford Everest Platinum+ 2.3L AT 4x4', price: '1.629.000.000đ' }
+                    { name: 'Ford Everest Thế Hệ Mới — Active 2.0L AT 4x2', price: '1.129.000.000đ' },
+                    { name: 'Ford Everest Thế Hệ Mới — Sport 2.0L AT 4x2', price: '1.209.000.000đ' },
+                    { name: 'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x2', price: '1.353.000.000đ' },
+                    { name: 'Ford Everest Thế Hệ Mới — Platinum 2.0L AT 4x4', price: '1.440.000.000đ' },
+                    { name: 'Ford Everest Thế Hệ Mới — Platinum+ 2.3L AT 4x4', price: '1.629.000.000đ' }
                 ]
             },
             {
@@ -874,13 +882,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: 'Giá Ford Ranger tại Quy Nhơn',
                 image: 'assets/slides/hero_ranger.png',
                 icon: 'fa-truck-pickup',
-                defaultPrice: '659.000.000đ',
+                defaultPrice: '726.000.000đ',
                 versions: [
-                    { name: 'Ford Ranger XLS 4x2 AT', price: '707.000.000đ' },
-                    { name: 'Ford Ranger XLS 4x4 AT', price: '776.000.000đ' },
-                    { name: 'Ford Ranger Sport 4x4 AT', price: '864.000.000đ' },
-                    { name: 'Ford Ranger Wildtrak 4x4 AT', price: '979.000.000đ' },
-                    { name: 'Ford Ranger Stormtrak 4x4 AT', price: '1.039.000.000đ' }
+                    { name: 'Ford Ranger Thế Hệ Mới — XLS 4x2 AT', price: '726.000.000đ' },
+                    { name: 'Ford Ranger Thế Hệ Mới — XLS 4x4 AT', price: '795.000.000đ' },
+                    { name: 'Ford Ranger Thế Hệ Mới — Wildtrak AT 4x4', price: '973.000.000đ' },
+                    { name: 'Ford Ranger Thế Hệ Mới — Wildtrak 3.0L V6 AT 4x4', price: '1.093.000.000đ' }
                 ]
             },
             {
